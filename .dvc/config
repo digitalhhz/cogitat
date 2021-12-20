@@ -1,0 +1,3 @@
+['remote "test-remote"']
+    url = s3://buckets/dvc-test/
+    endpointurl = http://10.0.105.61:9001/buckets/dvc-test/
