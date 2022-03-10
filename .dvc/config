@@ -1,3 +1,5 @@
-['remote "test-remote"']
-    url = s3://buckets/dvc-test/
-    endpointurl = http://10.0.105.61:9001/buckets/dvc-test/
+[core]
+    remote = kilab-remote
+['remote "kilab-remote"']
+    url = s3://dvcstore
+    endpointurl = http://10.0.105.60:9000/
