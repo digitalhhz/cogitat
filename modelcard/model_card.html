@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+<style>
+  h1 {text-align: center;}
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1;
+  }
+  .card {
+    padding: 1em;
+    border: 1px solid #DADCE0;
+    margin: 10px;
+  }
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .img-item {
+    flex: 1;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table, th, td { border: 1px solid black; }
+  th, td { border: 1px solid #CCC; height: 30px; }
+  caption { font-weight: bold; }
+</style>
+<title>
+  Model Card for Model card Test Name
+</title>
+</head>
+<body>
+  <h1>
+    Model Card for Model card Test Name
+  </h1>
+    <div class="row">
+      <div class="col card">
+        <h2>Model Details</h2>
+          <h3>Overview</h3>
+              Model card Test Overview
+          <h3>Version</h3>
+              
+  
+    <div>name: v1.0</div>
+
+              
+  
+    <div>date: 12/03/2022 17:17:17</div>
+
+              
+  
+
+          
+          <h3>Documentation</h3>
+              influx -database &#39;digitalhhz2&#39; -execute &#34;SELECT temperature, illuminance, occupancy FROM digitalhhz2.autogen.mqtt_consumer WHERE occupancy = 1 OR occupancy = 0 AND time &lt;= &#39;2022-03-12T16:00:03Z&#39; and time &gt;= &#39;2022-02-10T16:00:03Z&#39;  AND topic=&#39;DHHZ/024/EntryArea/Motion1&#39;&#34;  -format csv &gt; influxData.csv
+          <h3>Owners</h3>
+            
+              DigitalHHZ, digitalhhz@gmail.com
+            
+          
+          
+            <h3>Licenses</h3>
+              <ul>
+
+                <li>Apache-2.0</li>
+
+              </ul>
+          
+            <h3>References</h3>
+              <ul>
+              
+                <li><a href="https://www.tensorflow.org/guide/keras/transfer_learning">https://www.tensorflow.org/guide/keras/transfer_learning</a></li>
+              
+                <li><a href="https://arxiv.org/abs/1801.04381">https://arxiv.org/abs/1801.04381</a></li>
+              
+              </ul>
+          
+            <h3>Citations</h3>
+              <ul>
+              
+                <li>https://github.com/tensorflow/model-card-toolkit/blob/master/model_card_toolkit/documentation/examples/Standalone_Model_Card_Toolkit_Demo.ipynb</li>
+              
+              </ul>
+        </div>
+      
+      
+      <div class="col card">
+        <h2>Considerations</h2>
+          
+          
+            <h3>Use Cases</h3>
+              
+  
+  <ul>
+  
+    <li>Model card Test Use Cases</li>
+  
+  </ul>
+
+          
+          
+            <h3>Limitations</h3>
+              
+  
+  <ul>
+  
+    <li>Model card Test Limitations Description</li>
+  
+  </ul>
+
+          
+          
+          
+            <h3>Ethical Considerations</h3>
+              <ul>
+                <li>
+                  <div>Risk: Ethical considerartionsrisk name</div>
+                  <div>Mitigation Strategy: Ethical considerations risk mitigation strategy</div>
+                </li> </ul>
+      </div>
+      
+    </div>
+    
+    
+</body>
+</html>
