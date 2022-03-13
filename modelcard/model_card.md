@@ -15,7 +15,7 @@ Model card Test Overview
 
 name: v1.0  
 
-date: 13/03/2022 17:04:55  
+date: 13/03/2022 20:00:07  
 
 ### Owners
 
@@ -52,6 +52,6 @@ date: 13/03/2022 17:04:55
 
 ### Ethical Considerations
 
-* Risk: Ethical considerartionsrisk name
+* Risk: Ethical considerationsrisk name
   * Mitigation Strategy: Ethical considerations risk mitigation strategy
 
