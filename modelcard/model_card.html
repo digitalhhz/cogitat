@@ -43,36 +43,50 @@
   caption { font-weight: bold; }
 </style>
 <title>
-  Model Card for Model card Test Name
+  Model Card for Cogitat AI - Occupancy
 </title>
 </head>
 <body>
   <h1>
-    Model Card for Model card Test Name
+    Model Card for Cogitat AI - Occupancy
   </h1>
     <div class="row">
       <div class="col card">
         <h2>Model Details</h2>
           <h3>Overview</h3>
-              Model card Test Overview
+              This a decision tree classification model auto-generated using mljar. 
+It aims to classify whether a room is occupied or not based on the features light intensity and 
+temperature. The model is trained on a dataset consisting of sensor values obtained by the 
+digitalhhz infrastructure&#39;s database. The respective query is documented in the Documentation 
+section of this Model Card.
           <h3>Version</h3>
               
   
-    <div>name: v1.0</div>
+    <div>name: Cogitat AI v1.0</div>
 
               
   
-    <div>date: 14/03/2022 17:30:42</div>
+    <div>date: 14/03/2022 18:20:42</div>
 
               
   
 
           
           <h3>Documentation</h3>
-              influx -database &#39;digitalhhz2&#39; -execute &#34;SELECT temperature, illuminance, occupancy FROM digitalhhz2.autogen.mqtt_consumer WHERE occupancy = 1 OR occupancy = 0 AND time &lt;= &#39;2022-03-14T18:30:03Z&#39; and time &gt;= &#39;2022-02-12T18:30:03Z&#39;  AND topic=&#39;DHHZ/024/EntryArea/Motion1&#39;&#34;  -format csv &gt; influxData.csv
+              influx -database &#39;digitalhhz2&#39; -execute &#34;SELECT temperature, illuminance, occupancy FROM digitalhhz2.autogen.mqtt_consumer WHERE occupancy = 1 OR occupancy = 0 AND time &lt;= &#39;2022-03-14T19:20:03Z&#39; and time &gt;= &#39;2022-02-12T19:20:03Z&#39;  AND topic=&#39;DHHZ/024/EntryArea/Motion1&#39;&#34;  -format csv &gt; influxData.csv
           <h3>Owners</h3>
             
-              DigitalHHZ, digitalhhz@gmail.com
+              
+                <li>DigitalHHZ, digitalhhz@gmail.com</li>
+              
+                <li>Andreas Greiss, https://github.com/angrit06</li>
+              
+                <li>Jonathan Maier, https://github.com/eGGenius</li>
+              
+                <li>Tilman Welsch, https://github.com/TilmanWelsch</li>
+              
+                <li>Sedat Yasar, https://github.com/SedatYasar</li>
+              
             
           
           
@@ -86,23 +100,33 @@
             <h3>References</h3>
               <ul>
               
-                <li><a href="https://www.tensorflow.org/guide/keras/transfer_learning">https://www.tensorflow.org/guide/keras/transfer_learning</a></li>
+                <li><a href="https://github.com/digitalhhz/DigitalHHZ2">https://github.com/digitalhhz/DigitalHHZ2</a></li>
               
-                <li><a href="https://arxiv.org/abs/1801.04381">https://arxiv.org/abs/1801.04381</a></li>
+                <li><a href="https://github.com/digitalhhz/cogitat">https://github.com/digitalhhz/cogitat</a></li>
+              
+                <li><a href="https://arxiv.org/pdf/1810.03993.pdf">https://arxiv.org/pdf/1810.03993.pdf</a></li>
               
               </ul>
           
-            <h3>Citations</h3>
-              <ul>
-              
-                <li>https://github.com/tensorflow/model-card-toolkit/blob/master/model_card_toolkit/documentation/examples/Standalone_Model_Card_Toolkit_Demo.ipynb</li>
-              
-              </ul>
         </div>
       
       
       <div class="col card">
         <h2>Considerations</h2>
+          
+            <h3>Intended Users</h3>
+              
+  
+  <ul>
+  
+    <li>Professors of HHZ</li>
+  
+    <li>Students of HHZ</li>
+  
+    <li>Guests and visitors of HHZ</li>
+  
+  </ul>
+
           
           
             <h3>Use Cases</h3>
@@ -110,30 +134,20 @@
   
   <ul>
   
-    <li>Model card Test Use Cases</li>
-  
-  </ul>
+    <li>The infrastructure that provides the data that was used to train this model was 
+created by the authors as part of the semester project in the Master degree course Digital Business 
+Engineering at the Herman-Hollerith-Center of Reutlingen University in Boeblingen, Germany. 
+As the second semester project the authors implemented the pipeline which trains, validates, 
+versions, and uses this model. 
 
-          
-          
-            <h3>Limitations</h3>
-              
-  
-  <ul>
-  
-    <li>Model card Test Limitations Description</li>
+The model itself can be used to predict the occupancy of room 026/027 at HHZ.</li>
   
   </ul>
 
           
           
           
-            <h3>Ethical Considerations</h3>
-              <ul>
-                <li>
-                  <div>Risk: Ethical considerartionsrisk name</div>
-                  <div>Mitigation Strategy: Ethical considerations risk mitigation strategy</div>
-                </li> </ul>
+          
       </div>
       
     </div>
