@@ -1,5 +1,6 @@
 [core]
     remote = kilab-remote
+    autostage = true
 ['remote "kilab-remote"']
     url = s3://dvcstore
     endpointurl = http://10.0.105.60:9000/
