@@ -66,14 +66,14 @@ section of this Model Card.
 
               
   
-    <div>date: 20/03/2022 08:10:48</div>
+    <div>date: 20/03/2022 08:20:48</div>
 
               
   
 
           
           <h3>Documentation</h3>
-              influx -database &#39;digitalhhz2&#39; -execute &#34;SELECT temperature, illuminance, occupancy FROM digitalhhz2.autogen.mqtt_consumer WHERE occupancy = 1 OR occupancy = 0 AND time &lt;= &#39;2022-03-20T09:10:03Z&#39; and time &gt;= &#39;2022-02-18T09:10:03Z&#39;  AND topic=&#39;DHHZ/024/EntryArea/Motion1&#39;&#34;  -format csv &gt; influxData.csv
+              influx -database &#39;digitalhhz2&#39; -execute &#34;SELECT temperature, illuminance, occupancy FROM digitalhhz2.autogen.mqtt_consumer WHERE occupancy = 1 OR occupancy = 0 AND time &lt;= &#39;2022-03-20T09:20:03Z&#39; and time &gt;= &#39;2022-02-18T09:20:03Z&#39;  AND topic=&#39;DHHZ/024/EntryArea/Motion1&#39;&#34;  -format csv &gt; influxData.csv
           <h3>Owners</h3>
             
               
