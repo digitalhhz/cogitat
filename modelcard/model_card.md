@@ -19,7 +19,7 @@ section of this Model Card.
 
 name: Cogitat AI v1.0  
 
-date: 22/03/2022 16:20:51  
+date: 22/03/2022 16:30:53  
 
 ### Owners
 
